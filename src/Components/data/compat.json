@@ -1,0 +1,19 @@
+{
+    "Hyaluronic Acid": {
+      "imagePath": "/img/bubble.jpg",
+      "productName": "Bubble Moisturizer"
+    },
+    "Niacinamide": {
+      "imagePath": "/img/cetaphil-cleanser2.jpg",
+      "productName": "Cetaphil Cleanser"
+    },
+    "Peptides": {
+      "imagePath": "/img/skincare-product-1.jpg",
+      "productName": "Olay Moisturizer"
+    },
+    "Retinol": {
+      "imagePath": "/img/retinol.jpg",
+      "productName": "Cerave Retinol"
+    }
+} 
+  

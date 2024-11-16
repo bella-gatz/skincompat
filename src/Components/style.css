@@ -1,0 +1,782 @@
+
+
+/* For screens larger than 600px, display the links and hide the hamburger menu */
+@media screen and (min-width: 601px) {
+    .topnav a:not(:first-child) {display: block;}
+    .topnav button.icon {
+        display: none;
+    }
+}
+  
+/* applies to all js pages */
+@media (min-width: 598px) {
+    body {
+        font-size: smaller;
+    }
+    footer {
+        display: block;
+        left: 0;
+        bottom: 0;
+    }
+}
+  
+/* applies to all js pages */
+@media (min-width: 350px) {
+    table > thead > tr.weekdays > th {
+        font-size: xx-small;
+    }
+}
+
+/* applies to all js pages */
+@media (min-width: 776px) {
+    table > thead > tr.weekdays > th {
+        font-size: large;
+    }
+}
+
+/* applies to all js pages */
+@media (min-width: 1200px) {
+    body {
+        font-size: larger;
+    }
+    footer {
+        display: block;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* For screens with max width 768px */
+@media (max-width: 768px) {
+    .intro-section {
+      display: flex;
+      flex-direction: column;
+    }
+    .image-section{ 
+        width: auto;
+    }
+  }
+
+
+@media screen and (max-width: 600px){ 
+
+     /* For the Hamburger menu */
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Compatibility.js page for below rules */
+
+    .compat-container .row {
+        flex-direction: column;
+      }
+    
+      .col-md-6 {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 5px;
+      }
+    
+      .compat-img {
+        width: 100%;
+      }
+    
+      .compat-card {
+        padding: 10px;
+      }
+    
+      .compat-card .card-title {
+        font-size: 18px;
+      }
+    
+      .form-select {
+        width: 100%;
+        margin-top: 10px;
+      }
+    
+      #alertMessage {
+        padding: 10px;
+      }
+
+    /* Accessibility.js page for below rules */
+    .title {
+        text-align: center;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .topnav a {
+        margin-bottom: 10px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .product-container {
+        display: block;
+    }
+    .flex-item {
+        margin-bottom: 20px;
+    }
+
+    /* Calendar.js page for below rules */
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topnav a {
+        margin-bottom: 10px;
+    }
+    .flexbox-container {
+        flex-direction: column;
+    }
+    .spacings {
+        margin-bottom: 20px;
+    }
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-day {
+        margin-bottom: 10px;
+    }  
+}
+
+/* Applies to all js pages: For the image next to Glass Skin title */
+.brand img {
+    width: 55px; 
+    height: 55px; 
+    float: left;
+    margin-right: 10px;
+}
+
+/* applies to all js pages */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 0;
+    /* background-color: #60495A !important;
+    color: #FFF7F8 !important;  */
+    background-color: #60495A;
+    color: #FFF7F8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* applies to all pages */
+main {
+    flex: 1;
+}
+
+/* applies to all pages */
+section {
+    padding: 1em;
+}
+
+/* applies to all pages */
+h1 { 
+    font-size: xx-large;
+    font-family: 'Palatino', serif;
+    margin-bottom: 0; 
+}
+
+/* applies to all js pages, for the "Glass Skin" styling */
+.brand img, .brand h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* applies to all js pages */
+h2 { 
+    font-size: x-large;
+    font-family: 'Helvetica Neue';
+    margin-top: 0; 
+}
+
+/* applies to app pages */
+p {
+    font-family: 'Arial', sans-serif;
+}
+
+/* applies to all pages */
+h1, h2 { 
+    line-height: 1.2; 
+    display: block;
+}
+
+/* applies to all pages */
+header { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    grid-column: 1/3;
+    padding-top: 0px; 
+}
+
+/* applies to all pages */
+.topnav {
+    float: left;
+    display: block;
+    color: #FFF7F8;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* applies to all pages */
+.topnav a {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    color: #FFF7F8;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* applies to all pages */
+a:hover {
+    background-color: #96738D;
+    border-radius: 30px;
+}
+
+/* accessibility.js, calender.js, compatibility.js */
+  .container {
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* accessibility.js */
+.flex-container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+/* homepage.js */
+.main-text {
+    text-align: left;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* homepage.js */
+.intro-text {
+    margin-bottom: 1em;
+    font-size: 60px;
+}
+
+/* homepage.js */
+.description-text {
+    margin-top: 2em; 
+    margin-bottom: 2em; 
+}
+
+/* homepage.js */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* homepage.js */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; 
+    margin: 10px; 
+}
+
+/* homepage.js */
+.image-section {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 50%;
+}
+
+/* homepage.js */
+.rounded-img {
+    width: 100%;
+    height: auto;
+}
+
+/* homepage.js */
+.intro-text, .image-section { 
+    margin: 0 10px; 
+}
+
+/* homepage.js */
+.homepage-photo {
+    width: auto; 
+    height: 100%; 
+}
+
+/* accessibility.js */
+.accessibility section:nth-child(2) {
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: #96738D;
+}
+
+/* accessibility.js */
+.accessibility section:nth-child(2) .flex-item img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* accessibility.js */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* accessibility.js */
+.accessibility section:nth-child(2) .flex-item {
+    height: 350px;
+    width: 250px;
+    flex: 0 0 250px;
+    background-color: #806078;
+    margin: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+  }
+
+  /* accessibility.js */
+.accessibility section:nth-child(2) .flex-item p {
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+/* calender.js */
+.spacings {
+    text-align: center;
+}
+
+/* calender.js */
+.checkbox-container { 
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+}
+
+/* accessibility.js, calender.js, schedule.js */
+.content {
+    margin-left: 20%; 
+    margin-right: 20%; 
+}
+
+/* proposal.js */
+.content-image {
+    width: 30%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+/* proposal.js */
+.title-text {
+    margin-left: 40%; 
+    margin-right: 30%; 
+    font-size: 70px;
+    font-family: 'Palatino', serif;
+    margin-bottom: 0; 
+}
+
+/* new flexbox for calendar.js */
+.table-container {
+    width: 100%; 
+    border: 2px; 
+    border-color: white;
+    border-radius: 20px;
+    padding: 1px; 
+    color: white;
+    text-align: center;
+    table-layout: fixed;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* calendar.js & schedule.js sectioning */
+.flexbox-container {
+    border: white;
+    border-radius: 30px;
+    display: flex;
+    margin: 10px;
+    flex: 1;
+    height: 100%;
+}
+
+/* calendar.js weekdays*/
+.flex-day {
+    border-color: white;
+    border-radius: 2px;
+    border: white;
+    box-shadow: white;
+    margin: 10px;
+    height: 30%;
+    width: 30%;
+    background-color:#96738D;
+}
+
+/* calendar.js weekday titles */
+.weekdays {
+    text-shadow: 1px 1px 2px pink;
+    text-align: center;
+    border: 30px;
+}
+
+/* schedule.js header styling */
+.today {
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    border: 30px;
+}
+
+/* schedule.js container */
+.schedule-container {
+    width: 100%; 
+    border: 20px; 
+    border-color: white;
+    border-radius: 20px;
+    padding: 1px; 
+    color: white;
+    text-align: center;
+    table-layout: fixed;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+/* schedule.js flexbox for current day */
+.flex-today {
+    border-color: white;
+    border-radius: 2px;
+    border: white;
+    box-shadow: white;
+    margin: 10px;
+    height: 30%;
+    width: 50%;
+    background-color:#96738D;
+}
+
+/* calendar styling for multiple choice */
+/* styling for question text */
+.multiple-container h2 {
+    color: white;
+    
+}
+
+/* Styling for the labels and radio buttons */ 
+.answer-choices label { 
+    color: white;
+} 
+
+/* Styling for the radio buttons themselves */   
+.answer-choices input[type="radio"] { 
+     color: white;
+} 
+
+@media (max-width: 600px) {
+    /* calendar page for below styling */
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topnav a {
+        margin-bottom: 10px;
+    }
+    .flexbox-container {
+        flex-direction: column;
+    }
+    .spacings {
+        margin-bottom: 20px;
+    }
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-day {
+        text-align: center;
+        text-size-adjust: smaller;
+        font-weight: bold;
+        border-radius: 30px;
+        border: white;
+        box-shadow: white;
+        margin: 10px;
+        height: 30%;
+        width: 30%;
+        background-color: #96738D;
+    }
+    #weekdays {
+        text-align: center;
+        border: 30px;
+        color: white;
+        font-size: small; /* Adjust the font size for weekdays */
+    }
+}
+
+
+/* ask sophia if shes using this classname=button, if not delete */
+
+.button {
+    background-color: rgb(34, 0, 34);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* calender.js*/
+button {
+    background-color: rgb(109, 60, 109);
+    border: double;
+    border-radius: 30px;
+    color: white;
+    
+    text-align: center;
+    font-size: 16px;
+}
+
+.flex-day {
+    border-radius: 30px;
+    padding: 10px;
+    padding-right: 30px;
+    text-align: center;
+    border: white;
+    box-shadow: white;
+    font-weight: bold;
+    margin: 10px;
+    height: 30%;
+    width: 30%;
+    background-color: #886980;
+}
+
+.day-products {
+    color:white;
+    text-align: center;
+}
+
+/* compatibility.js  */
+.card {
+    height: 100%;
+  }
+
+/* compatibility.js  */
+  .card-img-top {
+    height: 300px;
+    object-fit:scale-down;
+  }
+
+  /* compatibility.js  */
+  .card-body {
+    text-align: center;
+    color: purple;
+    align-items: center;
+  }
+
+/* compatibility.js */
+.row {
+    background-color: #96738D;
+}
+
+/* compatibility.js */
+.card {
+    background-color: #806078;
+}
+
+/* compatibility.js */
+.compat-card {
+    color: white;
+}
+
+/* compatibility.js */
+.compat-container {
+    align-items: center;
+    text-align: center;
+}
+
+/* compatibility.js */
+.compat-img {
+    object-fit: cover;
+    height: 400px;
+}
+
+/* compatibility.js */
+.card-title:hover {
+        text-decoration: underline;
+}
+
+/* for the homepage image to not overlap */
+.rounded-img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%; 
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .rounded-img {
+        position: absolute;
+        bottom: 0;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Padding for compatibility.js */
+.p-3 {
+    padding: 2rem !important;
+}
+
+/* Active Link for compatibility.js */
+.active {
+    font-weight: bold;
+}
+
+/* Container for compatibility.js */
+.container {
+    width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Rounded for compatibility.js */
+.rounded {
+    border-radius: 0.25rem!important;
+}
+
+/* Row for compatibility.js */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Column for compatibility.js */
+.col-md-6 {
+    flex: 0 0 50%;
+}
+
+/* Margin Bottom for compatibility.js */
+.mb-3 {
+    margin-bottom: 1rem!important;
+}
+
+/* Card for compatibility.js */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+/* Card Image Top for compatibility.js */
+.card-img-top {
+    width: 100%;
+}
+
+/* Card Body for compatibility.js */
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+/* Card Title for compatibility.js */
+.card-title {
+    margin-bottom: .75rem;
+}
+
+/* Card Text for compatibility.js */
+.card-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Form Select for compatibility.js */
+.form-select {
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* Display Flex for compatibility.js */
+.d-flex {
+    display: flex!important;
+}
+
+/* Justify Content Center for compatibility.js */
+.justify-content-center {
+    justify-content: center!important;
+}
+
+/* Padding Top and Bottom for compatibility.js */
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+
+/* Alert Success for compatibility.js */
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    position: relative;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+/* Alert Danger for compatibility.js */
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    position: relative;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+  

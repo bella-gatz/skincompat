@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sabrina">
+    <meta name="description" content="Web page for skincare calendar">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Glass Skin Calendar</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Glass Skin</h1>  
+            <h2>Skincare Schedule</h2>
+        </div> 
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="#calendar">Skincare Calendar</a>
+            <a href="compatibility.html">Product Comparison</a>
+            <a href="accessibility.html">Accessibility</a>
+            <a href="proposal.html">About Us</a>
+        </div>
+    </header>
+    <div class="spacings">
+        <input type="text" placeholder="Add Products">
+        <input type="submit" value="Submit">
+    </div>
+    <div class="flexbox-container">
+        <section>
+            <!-- changed from checkbox-container to multiple-container -->
+            <div class="multiple-container"> 
+                <h2>What Kind of Skin do You Have?</h2>
+                <!-- use to be container -->
+                <label class="answer-choices">
+                    <input type="radio" name="skinType" value="oilySkin">
+                    Oily Skin
+                </label>
+                <label class="answer-choices">
+                    <input type="radio" name="skinType" value="drySkin">
+                    Dry Skin
+                </label>
+                <label class="answer-choices">
+                    <input type="radio" name="skinType" value="combination">
+                    Combination
+                </label>
+                <input type="submit" value="Submit">
+            </div>
+            <<h2>Preferences:</h2>
+            <div class="checkbox-container">
+                <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkbox"></span>Vegan
+                </label>
+                <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkbox"></span>Cruelty-Free
+                </label>
+            </div>
+        </section>  
+        <section>
+            <div class="table-container">
+                <div class="flex-day">
+                    <h2 class="weekdays">Sunday</h2>
+                    <button class="button" onclick="location.href='schedule.html'" type="button">
+                        Day 1
+                    </button>
+                </div>
+                <div class="flex-day">
+                    <h2 class="weekdays">Monday</h2>
+                    <button class="button" onclick="location.href='schedule.html'" type="button">
+                        Day 2
+                    </button>
+                </div>
+                <div class="flex-day">
+                    <h2 class="weekdays">Tuesday</h2>
+                    <button class="button" onclick="location.href='schedule.html'" type="button">
+                        Day 3
+                    </button>
+                </div>
+                <div class="flex-day">
+                    <h2 class="weekdays">Wednesday</h2>
+                    <button class="button" onclick="location.href='schedule.html'" type="button">
+                        Day 4
+                    </button>
+                </div>
+                <div class="flex-day">
+                    <h2 class="weekdays">Thursday</h2>
+                    <button class="button" onclick="location.href='schedule.html'" type="button">
+                        Day 5
+                    </button>
+                </div>
+                <div class="flex-day">
+                    <h2 class="weekdays">Friday</h2>
+                    <button class="button" onclick="location.href='schedule.html'" type="button">
+                        Day 6
+                    </button>
+                </div>
+                <div class="flex-day">
+                    <h2 class="weekdays">Saturday</h2>
+                    <button class="button" onclick="location.href='schedule.html'" type="button">
+                        Day 7
+                    </button>
+                </div>
+                
+            </div>
+        </section>  
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 GlassSkin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Web page for skincare compatibility generator">
+    <meta name="author" content="Bella">
+    <title> Compatibility Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body class="p-3">
+
+<header>
+  <div class="brand">
+    <h1>Glass Skin</h1>  
+    <h2 class="p-3">Product Comparison</h2>
+  </div> 
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="calendar.html">Skincare Calendar</a>
+    <a class="active" href="#compatibility.html">Product Comparison</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="proposal.html">About Us</a>
+  </div>
+</header>
+
+    <div class="compat-container container">
+      <div class="rounded row p-3">
+          <div class="col-md-6">
+            <div class="card"> 
+              <img class="compat-img card-img-top mx-auto" src="img/suncreen.jpg" alt="Sun Bum Suncreen Spf 50"> 
+              <div class="compat-card card-body">
+                <h1 class="card-title">SPF 50 Suncreen</h1>
+                <p class="card-text">Sun Bum</p>
+                <div class="mx-auto">
+                  <label for="form-a">
+                    <select class="form-select" id="form-a">
+                      <option selected>First product name:</option>
+                      <option value="Sunscreen">Sunscreen</option>
+                      <option value="Retinol">Retinol</option>
+                      <option value="Hylaronic Acid">Hylaronic Acid</option>
+                      <option value="Niacinamide">Niacinamide</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mb-3"> 
+              <img class="compat-img card-img-top mx-auto" src="img/retinol.jpg" alt="Cerave Retinol"> 
+              <div class="compat-card  card-body">
+                <h1 class="card-title">Retinol Serum</h1>
+                <p class="card-text">Cerave</p>
+                <div class="mx-auto">
+                  <label for="form-b">
+                    <select class="form-select" id="form-b"> 
+                      <option selected>Second product name:</option>
+                      <option value="Retinol">Retinol</option>
+                      <option value="Sunscreen">Sunscreen</option>
+                      <option value="Hyaluronic Acid">Hylaronic Acid</option>
+                      <option value="Niacinamide">Niacinamide</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input class="d-flex mx-auto m-3" type="submit" value="Submit">
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center py-3">
+        <div class="alert alert-success">
+          <h1>These are compatible!</h1>
+        </div>
+      </div>
+
+    <footer>
+      <p>&copy; 2024 GlassSkin. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
